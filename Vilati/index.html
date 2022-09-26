@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220926161629">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220926171658">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,9 +20,9 @@
 		<header class="header" data-scroll="179">
 			<div class="header__top top-header" style="background: url(img/header/Header-bg.png) center / cover no-repeat">
 				<div class="top-header__body">
-					<div class="top-header__logo">
+					<a href="index.html" class="top-header__logo">
 						<img src="img/logo-with-text.svg" alt="Vilati Logo">
-					</div>
+					</a>
 					<div class="top-header__benefits">
 						<ul class="top-header__benefits-list">
 							<li class="top-header__benefits-item">Versenyképesség</li>
@@ -88,7 +88,7 @@
 			<!-- Homepage about us section -->
 			<section class="home__about-us about-us-home">
 				<div class="about-us-home__decor">
-					<img src="img/1x1.jpg" data-src="img/svg/about-us-decor.svg" alt="Decor image">
+					<img src="img/svg/about-us-decor.svg" alt="Decor image">
 				</div>
 				<div class="about-us-home__container">
 					<div class="about-us-home__title _section-title">
@@ -406,18 +406,18 @@
 						<!-- Homepage contact form -->
 						<div class="contact-home__form-block">
 							<form action="#" class="contact-home__form form-contact-home">
-								<div class="form-contact-home__input-wrapper">
-									<input autocomplete="off" type="text" data-required name="name" placeholder="Name" class="form-contact-home__input">
-								</div>
-								<div class="form-contact-home__input-wrapper">
-									<input autocomplete="off" type="email" data-required="email" name="email" placeholder="Email" class="form-contact-home__input">
-								</div>
-								<div class="form-contact-home__input-wrapper">
-									<input autocomplete="off" type="tel" data-required name="tel" placeholder="Phone" class="form-contact-home__input">
-								</div>
-								<div class="form-contact-home__input-wrapper">
-									<textarea autocomplete="off" data-required name="message" placeholder="Message" class="form-contact-home__input form-contact-home__input_textarea"></textarea>
-								</div>
+								<label for="form-contact-home__name" class="form-contact-home__input-wrapper">
+									<input autocomplete="off" type="text" data-required name="name" id="form-contact-home__name" placeholder="Name" class="form-contact-home__input">
+								</label>
+								<label for="form-contact-home__email" class="form-contact-home__input-wrapper">
+									<input autocomplete="off" type="email" data-required="email" id="form-contact-home__email" name="email" placeholder="Email" class="form-contact-home__input">
+								</label>
+								<label for="form-contact-home__phone" class="form-contact-home__input-wrapper">
+									<input autocomplete="off" type="tel" data-required name="tel" id="form-contact-home__phone" placeholder="Phone" class="form-contact-home__input">
+								</label>
+								<label for="form-contact-home__text" class="form-contact-home__input-wrapper">
+									<textarea autocomplete="off" id="form-contact-home__text" data-required name="message" placeholder="Message" class="form-contact-home__input form-contact-home__input_textarea"></textarea>
+								</label>
 								<button type="submit" class="form-contact-home__button">Send</button>
 							</form>
 						</div>
@@ -461,10 +461,16 @@
 			</section>
 
 		</main>
-		<footer class="footer" style="background: url('img/footer/Footer_logo.png') center / cover no-repeat">
+		<footer class="footer" style="background: url('img/footer/Footer.png') center / cover no-repeat">
 			<div class="footer__container">
+				<a href="index.html" class="footer__logo">
+					<img src="img/logo-with-text.svg" alt="Vilati Logo" class="footer__logo-desktop">
+					<img src="img/logo.svg" alt="Vilati Logo" class="footer__logo-mobile">
+				</a>
 				<div class="footer__links">
-					<a href="#">Terms & Conditions</a> - <a href="#">Privacy Policy</a> - <a href="#">Site Map</a>
+					<a href="#">Terms & Conditions</a>
+					<a href="#">Privacy Policy</a>
+					<a href="#">Site Map</a>
 				</div>
 				<a href="#" data-goto=".header" data-goto-speed="2000" class="_back-to-top">
 					<img src="img/1x1.jpg" data-src="img/svg/Back-to-top_icon.svg" alt="Go top">
@@ -472,7 +478,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20220926161629"></script>
+	<script src="js/app.min.js?_v=20220926171658"></script>
 </body>
 
 </html>
