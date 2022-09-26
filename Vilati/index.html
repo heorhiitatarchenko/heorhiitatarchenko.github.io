@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220926022137">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220926161629">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,8 +16,8 @@
 
 <body>
 	<div class="wrapper">
-		<!-----------Header----------->
-		<header class="header">
+		<!-- Header -->
+		<header class="header" data-scroll="179">
 			<div class="header__top top-header" style="background: url(img/header/Header-bg.png) center / cover no-repeat">
 				<div class="top-header__body">
 					<div class="top-header__logo">
@@ -46,15 +46,13 @@
 							<li class="menu__item"><a href="#" class="menu__link">References</a></li>
 							<li class="menu__item"><a href="#" class="menu__link">Machines</a></li>
 							<li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
-							<li class="menu__item menu__item_dropdown">
-								<div class="dropdown">
-									<button class="dropbtn">Select language</button>
-									<div class="dropdown-content">
-										<a href="#">EN</a>
-										<a href="#">EN</a>
-										<a href="#">EN</a>
-									</div>
-								</div>
+							<li class="menu__item menu__item_select">
+								<select name="lang" id="lang-sel">
+									<option selected>Select language</option>
+									<option value="en">EN</option>
+									<option value="en">EN</option>
+									<option value="en">EN</option>
+								</select>
 							</li>
 						</ul>
 					</nav>
@@ -63,16 +61,16 @@
 
 		</header>
 
-		<!----------------Homepage--------------------->
+		<!-- Homepage -->
 		<main class="home">
-			<!-----------Homepage main section-------->
-			<section class="home__main main-home" style="background: url(img/home/main/background.png) center / cover no-repeat">
+			<!-- Homepage main section -->
+			<section class="home__main main-home" data-bg='img/home/main/background.png'>
 				<div class="main-home__container">
-					<!-----------Page main title-------->
+					<!-- Page main title -->
 					<h1 class="main-home__title _page-title">Lorem ipsum</h1>
-					<!-----------Page main text-------->
-					<div class="main-home__text-block _main-text-block _main-text">
-						<p>
+					<!-- Page main text -->
+					<div class="main-home__text-block _main-text-block">
+						<p class="_main-text">
 							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
 							laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
 							ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
@@ -80,90 +78,96 @@
 						</p>
 					</div>
 
-					<!-----------Page main buttons-------->
+					<!-- Page main buttons -->
 					<div class="main-home__buttons _buttons-main">
 						<a href="#" class="main-home__button _main-red-btn">Main Activities</a>
 						<a href="#" class="main-home__button _main-red-btn">Certifications</a>
 					</div>
 				</div>
 			</section>
-			<!-----------Homepage about us section-------->
+			<!-- Homepage about us section -->
 			<section class="home__about-us about-us-home">
+				<div class="about-us-home__decor">
+					<img src="img/1x1.jpg" data-src="img/svg/about-us-decor.svg" alt="Decor image">
+				</div>
 				<div class="about-us-home__container">
 					<div class="about-us-home__title _section-title">
 						<div class="_section-title-text">
 							<h2>About us</h2>
 						</div>
 					</div>
-					<div class="about-us-home__text-block _main-text">
-						<p>Vilati Gyártó PLC. is a Hungarian, private owned entreprise with 160-180 personell and 1,6-2 billion HUF
+					<div class="about-us-home__text-block">
+						<p class="_main-text">Vilati Gyártó PLC. is a Hungarian, private owned entreprise with 160-180 personell and
+							1,6-2 billion HUF
 							net sales per year (6-7,5 M EUR). We are dealing with sheet cutting, edge bending, welding (carbon steel-
 							, stainless steel- and aluminum welding), painting and surface treatment, mechanical and electric
 							assembly.
 						</p>
-						<p>Firstly such kind of customer's needs are fulfilled where the persistent, excellent quality, the
+						<p class="_main-text">Firstly such kind of customer's needs are fulfilled where the persistent, excellent
+							quality, the
 							competitive price and the accurate delivery deadline enjoy high priority. Our customers commonly are
 							assembly plants with a well-known brand name in their own market, especially in the railway and other
 							industry.
 						</p>
-						<p>Vilati Gyártó PLC. constantly extends capacity and pays particular attention to the product quality
+						<p class="_main-text">Vilati Gyártó PLC. constantly extends capacity and pays particular attention to the
+							product quality
 							shipped to customers. Our most important goal is to remain a stable partner in our customers' supplier
 							chain. </p>
 					</div>
 				</div>
 			</section>
-			<!-----------Homepage main activities section-------->
+			<!-- Homepage main activities section -->
 			<section class="home__main-activities main-activities-home">
 				<div class="main-activities-home__title _section-title">
 					<div class="_section-title-text">
 						<h2>Main Activities</h2>
 					</div>
 				</div>
-				<div class="main-activities-home__body" style="background: url('img/home/main-activities/Main-activities_background.png') center / cover no-repeat;">
+				<div class="main-activities-home__body" data-bg="img/home/main-activities/Main-activities_background.png">
 					<div class="main-activities-home__container">
-						<!-----------Homepage main activities cards-------->
+						<!-- Homepage main activities cards -->
 						<ul class="main-activities-home__cards">
 							<li class="main-activities-home__cards-item card-activities-main">
-								<div class="card-activities-main__image"><img data-src="img/home/main-activities/Laser_cutting-image.svg" alt="Laser cutting image"></div>
-								<div class="card-activities-main__title card-activities-main__title_double"><img src="img/home/main-activities/laser-cutting.svg" alt="Laser cutting"></div>
+								<div class="card-activities-main__image"><img src='img/1x1.jpg' data-src="img/home/main-activities/Laser_cutting-image.svg" alt="Laser cutting image"></div>
+								<div class="card-activities-main__title card-activities-main__title_double"><img src='img/1x1.jpg' data-src="img/home/main-activities/laser-cutting.svg" alt="Laser cutting"></div>
 							</li>
 							<li class="main-activities-home__cards-item card-activities-main">
-								<div class="card-activities-main__image"><img data-src="img/home/main-activities/Punching-image.svg" alt="Punching image"></div>
-								<div class="card-activities-main__title"><img src="img/home/main-activities/punching.svg" alt="Punching"></div>
+								<div class="card-activities-main__image"><img src='img/1x1.jpg' data-src="img/home/main-activities/Punching-image.svg" alt="Punching image"></div>
+								<div class="card-activities-main__title"><img src='img/1x1.jpg' data-src="img/home/main-activities/punching.svg" alt="Punching"></div>
 							</li>
 							<li class="main-activities-home__cards-item card-activities-main">
-								<div class="card-activities-main__image"><img data-src="img/home/main-activities/Edge_bending-image.svg" alt="Edge bending image"></div>
-								<div class="card-activities-main__title card-activities-main__title_double"><img src="img/home/main-activities/Edge-bending.svg" alt="Edge bending"></div>
+								<div class="card-activities-main__image"><img src='img/1x1.jpg' data-src="img/home/main-activities/Edge_bending-image.svg" alt="Edge bending image"></div>
+								<div class="card-activities-main__title card-activities-main__title_double"><img src='img/1x1.jpg' data-src="img/home/main-activities/Edge-bending.svg" alt="Edge bending"></div>
 							</li>
 							<li class="main-activities-home__cards-item card-activities-main">
-								<div class="card-activities-main__image"><img data-src="img/home/main-activities/Welding-image.svg" alt="Welding image"></div>
-								<div class="card-activities-main__title"><img src="img/home/main-activities/Welding.svg" alt="Welding">
+								<div class="card-activities-main__image"><img src='img/1x1.jpg' data-src="img/home/main-activities/Welding-image.svg" alt="Welding image"></div>
+								<div class="card-activities-main__title"><img src='img/1x1.jpg' data-src="img/home/main-activities/Welding.svg" alt="Welding">
 								</div>
 							</li>
 							<li class="main-activities-home__cards-item card-activities-main">
-								<div class="card-activities-main__image"><img data-src="img/home/main-activities/Machining-image.svg" alt="Machining image"></div>
-								<div class="card-activities-main__title"><img src="img/home/main-activities/Machining.svg" alt="Machining"></div>
+								<div class="card-activities-main__image"><img src='img/1x1.jpg' data-src="img/home/main-activities/Machining-image.svg" alt="Machining image"></div>
+								<div class="card-activities-main__title"><img src='img/1x1.jpg' data-src="img/home/main-activities/Machining.svg" alt="Machining"></div>
 							</li>
 							<li class="main-activities-home__cards-item card-activities-main">
-								<div class="card-activities-main__image"><img data-src="img/home/main-activities/Painting-image.svg" alt="Painting image"></div>
-								<div class="card-activities-main__title"><img src="img/home/main-activities/Painting.svg" alt="Painting"></div>
+								<div class="card-activities-main__image"><img src='img/1x1.jpg' data-src="img/home/main-activities/Painting-image.svg" alt="Painting image"></div>
+								<div class="card-activities-main__title"><img src='img/1x1.jpg' data-src="img/home/main-activities/Painting.svg" alt="Painting"></div>
 							</li>
 							<li class="main-activities-home__cards-item card-activities-main">
-								<div class="card-activities-main__image"><img data-src="img/home/main-activities/Surface_treatments-image.svg" alt="Surface treatments image">
+								<div class="card-activities-main__image"><img src='img/1x1.jpg' data-src="img/home/main-activities/Surface_treatments-image.svg" alt="Surface treatments image">
 								</div>
 								<div class="card-activities-main__title card-activities-main__title_double card-activities-main__title_surface">
-									<img src="img/home/main-activities/Surface_treatments.svg" alt="Surface treatments">
+									<img src='img/1x1.jpg' data-src="img/home/main-activities/Surface_treatments.svg" alt="Surface treatments">
 								</div>
 							</li>
 							<li class="main-activities-home__cards-item card-activities-main">
-								<div class="card-activities-main__image"><img data-src="img/home/main-activities/Assembly-image.svg" alt="Assembly image"></div>
-								<div class="card-activities-main__title"><img src="img/home/main-activities/Assembly.svg" alt="Assembly"></div>
+								<div class="card-activities-main__image"><img src='img/1x1.jpg' data-src="img/home/main-activities/Assembly-image.svg" alt="Assembly image"></div>
+								<div class="card-activities-main__title"><img src='img/1x1.jpg' data-src="img/home/main-activities/Assembly.svg" alt="Assembly"></div>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</section>
-			<!-----------Homepage our partners section-------->
+			<!-- Homepage our partners section -->
 			<section class="home__our-partners our-partners-home">
 				<div class="our-partners-home__container">
 					<div class="our-partners-home__title _section-title">
@@ -171,109 +175,110 @@
 							<h2>Our Partners</h2>
 						</div>
 					</div>
-					<div class="our-partners-home__describe-text _main-text">
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+					<div class="our-partners-home__describe-text">
+						<p class="_main-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+							euismod tincidunt ut
 							laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
 							ullamcorper suscipit lobortis nis
 						</p>
 					</div>
-					<!-----------Homepage our partners images block-------->
+					<!-- Homepage our partners images block -->
 					<div class="our-partners-home__body">
-						<a href="img/home/our-partners/electric/bg-electric.png" data-thumb="img/home/our-partners/electric/bg-electric.png" data-fancybox="electric-gallery" class="our-partners-home__item partners-item-home partners-item-home_electric" style="background: url('img/home/our-partners/electric/bg-electric.png') center / cover no-repeat">
+						<a href="img/home/our-partners/electric/bg-electric.png" data-thumb="img/home/our-partners/electric/bg-electric.png" data-fancybox="electric-gallery" class="our-partners-home__item partners-item-home partners-item-home_electric" data-bg="img/home/our-partners/electric/bg-electric.png">
 							<img src="img/home/gallery/gallery-photo-big.jpg" data-fancybox="electric-gallery" alt="gallery photo" style="display:none">
 							<div class="partners-item-home__title-top">
 								<p>Electric</p>
 							</div>
-							<!-----------Homepage our partners electric logos in image-------->
+							<!-- Homepage our partners electric logos in image -->
 							<div class="partners-item-home__content">
 								<div class="partners-item-home__logos-block">
-									<div class="partners-item-home__image"><img data-src="img/home/our-partners/electric/schneider.svg" alt="Schneider logo"></div>
-									<div class="partners-item-home__image"><img data-src="img/home/our-partners/electric/zollner.svg" alt="Zollner logo"></div>
-									<div class="partners-item-home__image"><img data-src="img/home/our-partners/electric/siemens.svg" alt="Siemens logo"></div>
+									<div class="partners-item-home__image"><img src='img/1x1.jpg' data-src="img/home/our-partners/electric/schneider.svg" alt="Schneider logo"></div>
+									<div class="partners-item-home__image"><img src='img/1x1.jpg' data-src="img/home/our-partners/electric/zollner.svg" alt="Zollner logo"></div>
+									<div class="partners-item-home__image"><img src='img/1x1.jpg' data-src="img/home/our-partners/electric/siemens.svg" alt="Siemens logo"></div>
 								</div>
 							</div>
 						</a>
-						<a href="img/home/our-partners/railway/bg-railway.png" data-fancybox="railway-gallery" data-thumb="img/home/our-partners/railway/bg-railway.png" class="our-partners-home__item partners-item-home partners-item-home_railway" style="background: url('img/home/our-partners/railway/bg-railway.png') center / cover no-repeat">
+						<a href="img/home/our-partners/railway/bg-railway.png" data-fancybox="railway-gallery" data-thumb="img/home/our-partners/railway/bg-railway.png" class="our-partners-home__item partners-item-home partners-item-home_railway" data-bg="img/home/our-partners/railway/bg-railway.png">
 							<img src="img/home/gallery/gallery-photo-big.jpg" data-fancybox="railway-gallery" alt="gallery photo" style="display:none">
 							<div class="partners-item-home__title-top">
 								<p>Railway</p>
 							</div>
-							<!-----------Homepage our partners railway logos in image-------->
+							<!-- Homepage our partners railway logos in image -->
 							<div class="partners-item-home__content">
 								<div class="partners-item-home__logos-block">
-									<div class="partners-item-home__image"><img data-src="img/home/our-partners/railway/siemens.svg" alt="Siemens logo"></div>
-									<div class="partners-item-home__image" style="width: 8.5rem; margin-bottom: -0.3rem"><img data-src="img/home/our-partners/railway/vossloh.png" alt="Vossloh logo"></div>
-									<div class="partners-item-home__image" style="margin-bottom: -0.5rem"><img data-src="img/home/our-partners/railway/knorr.svg" alt="Knorr logo"></div>
+									<div class="partners-item-home__image"><img src='img/1x1.jpg' data-src="img/home/our-partners/railway/siemens.svg" alt="Siemens logo"></div>
+									<div class="partners-item-home__image" style="width: 8.5rem; margin-bottom: -0.3rem"><img src='img/1x1.jpg' data-src="img/home/our-partners/railway/vossloh.png" alt="Vossloh logo"></div>
+									<div class="partners-item-home__image" style="margin-bottom: -0.5rem"><img src='img/1x1.jpg' data-src="img/home/our-partners/railway/knorr.svg" alt="Knorr logo"></div>
 								</div>
 								<div class="partners-item-home__logos-block">
-									<div class="partners-item-home__image"><img data-src="img/home/our-partners/railway/alstom.svg" alt="Alstom logo"></div>
-									<div class="partners-item-home__image" style="width: 10rem"><img data-src="img/home/our-partners/railway/bombardier.svg" alt="Bombardier logo"></div>
-									<div class="partners-item-home__image" style="width: 10rem"><img data-src="img/home/our-partners/railway/liebherr.svg" alt="Liebherr logo"></div>
+									<div class="partners-item-home__image"><img src='img/1x1.jpg' data-src="img/home/our-partners/railway/alstom.svg" alt="Alstom logo"></div>
+									<div class="partners-item-home__image" style="width: 10rem"><img src='img/1x1.jpg' data-src="img/home/our-partners/railway/bombardier.svg" alt="Bombardier logo"></div>
+									<div class="partners-item-home__image" style="width: 10rem"><img src='img/1x1.jpg' data-src="img/home/our-partners/railway/liebherr.svg" alt="Liebherr logo"></div>
 								</div>
 							</div>
 						</a>
-						<a href="img/home/our-partners/other/other-bg.png" data-fancybox="other-gallery" data-thumb="img/home/our-partners/other/other-bg.png" class="our-partners-home__item partners-item-home partners-item-home_other" style="background: url('img/home/our-partners/other/other-bg.png') center / cover no-repeat">
+						<a href="img/home/our-partners/other/other-bg.png" data-fancybox="other-gallery" data-thumb="img/home/our-partners/other/other-bg.png" class="our-partners-home__item partners-item-home partners-item-home_other" data-bg="img/home/our-partners/other/other-bg.png">
 							<img src="img/home/gallery/gallery-photo-big.jpg" data-fancybox="other-gallery" alt="gallery photo" style="display:none">
 							<div class="partners-item-home__title-top">
 								<p>Other</p>
 							</div>
-							<!-----------Homepage our partners other logos in image-------->
+							<!-- Homepage our partners other logos in image -->
 							<div class="partners-item-home__content">
 								<div class="partners-item-home__logos-block">
-									<div class="partners-item-home__image"><img data-src="img/home/our-partners/other/ammann.svg" alt="Ammann logo"></div>
-									<div class="partners-item-home__image"><img data-src="img/home/our-partners/other/smith-detection.svg" alt="Smith detection logo"></div>
-									<div class="partners-item-home__image"><img data-src="img/home/our-partners/other/stobag.svg" alt="Stobag logo"></div>
+									<div class="partners-item-home__image"><img src='img/1x1.jpg' data-src="img/home/our-partners/other/ammann.svg" alt="Ammann logo"></div>
+									<div class="partners-item-home__image"><img src='img/1x1.jpg' data-src="img/home/our-partners/other/smith-detection.svg" alt="Smith detection logo"></div>
+									<div class="partners-item-home__image"><img src='img/1x1.jpg' data-src="img/home/our-partners/other/stobag.svg" alt="Stobag logo"></div>
 								</div>
 							</div>
 						</a>
 					</div>
 				</div>
 			</section>
-			<!-----------Homepage gallery section-------->
+			<!-- Homepage gallery section -->
 			<section class="home__gallery gallery-home">
 				<div class="gallery-home__title _section-title">
 					<div class="_section-title-text">
 						<h2>Gallery</h2>
 					</div>
 				</div>
-				<!-----------Homepage gallery sliders block--------->
-				<div class="gallery-home__body" style="background: url('img/home/gallery/Gallery-Background.png') center / cover no-repeat">
+				<!-- Homepage gallery sliders block -->
+				<div class="gallery-home__body" data-bg="img/home/gallery/Gallery-Background.png">
 					<div class="gallery-home__container">
 						<div class="gallery-home__sliders-block">
-							<!-----------Homepage gallery thumbs slider block--------->
+							<!-- Homepage gallery thumbs slider block -->
 							<div class="gallery-home__thumbs">
 								<div class="gallery-home__thumbs-slider swiper">
 									<div class="gallery-home__thumbs-wrapper swiper-wrapper">
 										<div class="gallery-home__thumbs-slide swiper-slide">
-											<div class="gallery-home__thumbs-image-ibg"><img data-src="img/home/gallery/gallery-photo.jpg" alt="Gallery photo"></div>
+											<div class="gallery-home__thumbs-image-ibg"><img src='img/1x1.jpg' data-src="img/home/gallery/gallery-photo-big.jpg" alt="Gallery photo"></div>
 										</div>
 										<div class="gallery-home__thumbs-slide swiper-slide">
-											<div class="gallery-home__thumbs-image-ibg"><img data-src="img/home/gallery/gallery-photo.jpg" alt="Gallery photo"></div>
+											<div class="gallery-home__thumbs-image-ibg"><img src='img/1x1.jpg' data-src="img/home/gallery/gallery-photo-big.jpg" alt="Gallery photo"></div>
 										</div>
 										<div class="gallery-home__thumbs-slide swiper-slide">
-											<div class="gallery-home__thumbs-image-ibg"><img data-src="img/home/gallery/gallery-photo.jpg" alt="Gallery photo"></div>
+											<div class="gallery-home__thumbs-image-ibg"><img src='img/1x1.jpg' data-src="img/home/gallery/gallery-photo-big.jpg" alt="Gallery photo"></div>
 										</div>
 										<div class="gallery-home__thumbs-slide swiper-slide">
-											<div class="gallery-home__thumbs-image-ibg"><img data-src="img/home/gallery/gallery-photo.jpg" alt="Gallery photo"></div>
+											<div class="gallery-home__thumbs-image-ibg"><img src='img/1x1.jpg' data-src="img/home/gallery/gallery-photo-big.jpg" alt="Gallery photo"></div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<!-----------Homepage gallery main slider block--------->
+							<!-- Homepage gallery main slider block -->
 							<div class="gallery-home__main">
 								<div class="gallery-home__main-slider swiper">
 									<div class="gallery-home__main-wrapper swiper-wrapper">
 										<div class="gallery-home__main-slide swiper-slide">
-											<div class="gallery-home__main-image-ibg"><img data-src="img/home/gallery/gallery-photo-big.jpg" alt="Gallery photo"></div>
+											<div class="gallery-home__main-image-ibg"><img src='img/1x1.jpg' data-src="img/home/gallery/gallery-photo-big.jpg" alt="Gallery photo"></div>
 										</div>
 										<div class="gallery-home__main-slide swiper-slide">
-											<div class="gallery-home__main-image-ibg"><img data-src="img/home/gallery/gallery-photo-big.jpg" alt="Gallery photo"></div>
+											<div class="gallery-home__main-image-ibg"><img src='img/1x1.jpg' data-src="img/home/gallery/gallery-photo-big.jpg" alt="Gallery photo"></div>
 										</div>
 										<div class="gallery-home__main-slide swiper-slide">
-											<div class="gallery-home__main-image-ibg"><img data-src="img/home/gallery/gallery-photo-big.jpg" alt="Gallery photo"></div>
+											<div class="gallery-home__main-image-ibg"><img src='img/1x1.jpg' data-src="img/home/gallery/gallery-photo-big.jpg" alt="Gallery photo"></div>
 										</div>
 										<div class="gallery-home__main-slide swiper-slide">
-											<div class="gallery-home__main-image-ibg"><img data-src="img/home/gallery/gallery-photo-big.jpg" alt="Gallery photo"></div>
+											<div class="gallery-home__main-image-ibg"><img src='img/1x1.jpg' data-src="img/home/gallery/gallery-photo-big.jpg" alt="Gallery photo"></div>
 										</div>
 									</div>
 								</div>
@@ -282,7 +287,7 @@
 					</div>
 				</div>
 			</section>
-			<!-----------Homepage certifications section-------->
+			<!-- Homepage certifications section -->
 			<section class="home__certifications certifications-home">
 				<div class="certifications-home__title _section-title">
 					<div class="_section-title-text">
@@ -290,11 +295,11 @@
 					</div>
 				</div>
 
-				<div class="certifications-home__text _main-text">
-					<p>Vilati Manufacturer PLC has the following certifications:</p>
-					<p>*For downloading of Certifications, please click on the icon!</p>
+				<div class="certifications-home__text">
+					<p class="_main-text">Vilati Manufacturer PLC has the following certifications:</p>
+					<p class="_main-text">*For downloading of Certifications, please click on the icon!</p>
 				</div>
-				<!-----------Homepage certifications buttons-------->
+				<!-- Homepage certifications buttons -->
 				<div class="certifications-home__body">
 					<div class="certifications-home__container">
 						<div class="certifications-home__buttons-block">
@@ -331,18 +336,19 @@
 						</div>
 					</div>
 				</div>
-				<!-----------Homepage certifications block with text-content-------->
-				<div class="certifications-home__text-block text-block-certifications-home" style="background: url('img/home/certifications/Certifications_section.png') center / cover no-repeat">
+				<!-- Homepage certifications block with text-content -->
+				<div class="certifications-home__text-block text-block-certifications-home" data-bg="img/home/certifications/Certifications_section.png">
 					<div class="text-block-certifications-home__container">
 						<div class="text-block-certifications-home__body">
 							<div class="text-block-certifications-home__star-icon">
-								<img data-src="img/home/certifications/star-icon.svg" alt="Star">
+								<img src='img/1x1.jpg' data-src="img/home/certifications/star-icon.svg" alt="Star">
 							</div>
 							<div class="text-block-certifications-home__text-content">
 								<h3 class="text-block-certifications-home__title">Lorem ipsum dolor sit
 									amet, consectetuer adipiscing elit</h3>
-								<div class="text-block-certifications-home__text _main-text">
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+								<div class="text-block-certifications-home__text">
+									<p class="_main-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+										euismod tincidunt
 										ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
 										tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
 										iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore
@@ -353,7 +359,7 @@
 					</div>
 				</div>
 			</section>
-			<!-----------Homepage localization section-------->
+			<!-- Homepage localization section -->
 			<section class="home__localization localization-home">
 				<div class="localization-home__container">
 					<div class="localization-home__title _section-title">
@@ -366,22 +372,22 @@
 						<!-- Homepage localization google map -->
 						<div class="localization-home__map-block">
 							<div class="localization-home__map">
-								<iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2676.063609643092!2d20.385414814956484!3d47.87709567920353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47409298c468665b%3A0xb0b755729c8f5a37!2zVmlsYXRpIEd5w6FydMOzIFpydC4!5e0!3m2!1sru!2sua!4v1664137672108!5m2!1sen!2sen" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+								<iframe src='img/1x1.jpg' data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2676.063609643092!2d20.385414814956484!3d47.87709567920353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47409298c468665b%3A0xb0b755729c8f5a37!2zVmlsYXRpIEd5w6FydMOzIFpydC4!5e0!3m2!1sru!2sua!4v1664137672108!5m2!1sen!2sen" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 							</div>
 						</div>
 						<!-- Homepage localization routes -->
 						<div class="localization-home__routes">
 							<div class="localization-home__routes-item">
-								<img src="img/home/localization/route-1.svg" alt="Route">
+								<img src='img/1x1.jpg' data-src="img/home/localization/route-1.svg" alt="Route">
 							</div>
 							<div class="localization-home__routes-item">
-								<img src="img/home/localization/route-2.svg" alt="Route">
+								<img src='img/1x1.jpg' data-src="img/home/localization/route-2.svg" alt="Route">
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<!-----------Homepage contact section-------->
+			<!-- Homepage contact section -->
 			<section class="home__contact contact-home">
 				<div class="contact-home__container">
 					<div class="contact-home__title _section-title">
@@ -390,13 +396,14 @@
 						</div>
 					</div>
 
-					<div class="contact-home__top-text _main-text">
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+					<div class="contact-home__top-text">
+						<p class="_main-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+							euismod tincidunt ut
 							laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
 							ullamcorper suscipit lobortis nis</p>
 					</div>
 					<div class="contact-home__body">
-						<!-----------Homepage contact form-------->
+						<!-- Homepage contact form -->
 						<div class="contact-home__form-block">
 							<form action="#" class="contact-home__form form-contact-home">
 								<div class="form-contact-home__input-wrapper">
@@ -414,7 +421,7 @@
 								<button type="submit" class="form-contact-home__button">Send</button>
 							</form>
 						</div>
-						<!-----------Homepage directors contacts-------->
+						<!-- Homepage directors contacts -->
 						<div class="contact-home__directors">
 							<ul class="contact-home__directors-list">
 								<li class="contact-home__directors-list-item directors-home-item">
@@ -460,12 +467,12 @@
 					<a href="#">Terms & Conditions</a> - <a href="#">Privacy Policy</a> - <a href="#">Site Map</a>
 				</div>
 				<a href="#" data-goto=".header" data-goto-speed="2000" class="_back-to-top">
-					<img data-src="img/svg/Back-to-top_icon.svg" alt="Go top">
+					<img src="img/1x1.jpg" data-src="img/svg/Back-to-top_icon.svg" alt="Go top">
 				</a>
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20220926022137"></script>
+	<script src="js/app.min.js?_v=20220926161629"></script>
 </body>
 
 </html>
