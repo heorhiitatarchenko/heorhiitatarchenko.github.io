@@ -141,6 +141,14 @@ h6 {
      object-fit: contain;
 }
 
+/*------------- Main section styles -------------*/
+
+.main-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /*------------Main block common styles-------------------*/
 
 select {
@@ -189,7 +197,7 @@ select::-ms-expand {
 }
 
 ._main-text-block:not(:last-child) {
-  margin-bottom: 2.8125rem;
+  margin-bottom: 3.75rem;
 }
 
 /*------------Page main buttons-------------------*/
@@ -262,6 +270,12 @@ select::-ms-expand {
   transition: margin-right 0.2s ease 0s;
 }
 
+._main-red-btn_one {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 10rem;
+          flex: 0 0 10rem;
+}
+
 /*------------Section title styles-------------------*/
 
 ._section-title {
@@ -305,6 +319,51 @@ select::-ms-expand {
 ._main-text {
   line-height: 1.45;
   font-size: 1.25rem;
+}
+
+/*------------Certifications button-----------------*/
+
+._certifications-button {
+  background-color: #1e2e61;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 16.25rem;
+          flex: 0 0 16.25rem;
+  width: 16.25rem;
+  position: relative;
+}
+
+._certifications-button p {
+  padding: 0.9375rem 0 0.9375rem 1.5625rem;
+  color: #fff;
+  line-height: 1.25;
+  position: relative;
+  z-index: 2;
+}
+
+._certifications-button::before {
+  content: "";
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 5rem;
+          flex: 0 0 5rem;
+  background: #a5110a url("../img/svg/triangle.svg") center/25% no-repeat;
+  position: relative;
+  z-index: 2;
+}
+
+._certifications-button::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 5rem;
+  background-color: #a5110a;
+  -webkit-transition: width 0.45s ease 0s;
+  -o-transition: width 0.45s ease 0s;
+  transition: width 0.45s ease 0s;
 }
 
 ._lazy-load {
@@ -439,10 +498,11 @@ select::-ms-expand {
 
 .footer__container {
   padding-bottom: 1.25rem !important;
+  position: relative;
 }
 
 .footer__logo {
-  margin-top: 10.2803738318%;
+  padding-top: 10.2803738318%;
   margin-bottom: 2.3125rem;
   margin-left: 14.0186915888%;
   max-width: 21.875rem;
@@ -515,14 +575,6 @@ select::-ms-expand {
   left: 0;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-/*------------- Homepage main section styles -------------*/
-
-.main-home {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 /*------------- Homepage about us section styles -------------*/
@@ -914,49 +966,6 @@ select::-ms-expand {
           column-gap: 9.0625rem;
 }
 
-.certifications-home__button {
-  line-height: 1.25;
-  color: #fff;
-  background-color: #1e2e61;
-  white-space: nowrap;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 16rem;
-          flex: 0 0 16rem;
-  position: relative;
-}
-
-.certifications-home__button p {
-  padding: 0.9375rem 0 0.9375rem 1.5625rem;
-  position: relative;
-  z-index: 2;
-}
-
-.certifications-home__button::before {
-  content: "";
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 5rem;
-          flex: 0 0 5rem;
-  background: #a5110a url("../img/svg/triangle.svg") center/25% no-repeat;
-  position: relative;
-  z-index: 2;
-}
-
-.certifications-home__button::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 100%;
-  top: 0;
-  left: 5rem;
-  background-color: #a5110a;
-  -webkit-transition: width 0.45s ease 0s;
-  -o-transition: width 0.45s ease 0s;
-  transition: width 0.45s ease 0s;
-}
-
 /*------------- Homepage certifications text-block styles -------------*/
 
 .text-block-certifications-home {
@@ -1282,6 +1291,50 @@ select::-ms-expand {
   font-weight: 700;
   font-size: 1.1875rem;
   line-height: 1;
+}
+
+.main-certifications {
+  color: #fff;
+}
+
+.main-certifications ._page-title {
+  color: #fff;
+}
+
+/*------------- Certifications documents section styles -------------*/
+
+.documents-certifications {
+  padding-bottom: 5.625rem;
+}
+
+.documents-certifications__title:not(:last-child) {
+  margin-bottom: 2.2857142857em;
+}
+
+.documents-certifications__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 2.5rem;
+}
+
+.documents-certifications__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 46.7289719626%;
+          flex: 0 0 46.7289719626%;
+}
+
+.documents-certifications__image-ibg {
+  display: block;
+  width: 100%;
+  padding-bottom: 140.6%;
+  -webkit-box-shadow: 0.5rem 0.5rem 0.75rem rgba(0, 0, 0, 0.75);
+          box-shadow: 0.5rem 0.5rem 0.75rem rgba(0, 0, 0, 0.75);
 }
 
 .swiper {
@@ -3088,6 +3141,59 @@ body:not(.is-using-mouse) .fancybox__container :focus {
         -ms-flex: 0 1 26.875rem;
             flex: 0 1 26.875rem;
   }
+
+  .documents-certifications__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 48%;
+            flex: 0 0 48%;
+  }
+
+  .documents-certifications__button {
+    background-color: #1e2e61;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    position: relative;
+  }
+
+  .documents-certifications__button p {
+    padding: 0.625rem 0 0.625rem 0.625rem;
+    color: #fff;
+    line-height: 1.25;
+    position: relative;
+    z-index: 2;
+    font-size: 0.8125rem;
+  }
+
+  .documents-certifications__button::before {
+    content: "";
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 2.5rem;
+            flex: 0 0 2.5rem;
+    background: #a5110a url("../img/svg/triangle.svg") center/25% no-repeat;
+    position: relative;
+    z-index: 2;
+  }
+
+  .documents-certifications__button::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 5rem;
+    background-color: #a5110a;
+    -webkit-transition: width 0.45s ease 0s;
+    -o-transition: width 0.45s ease 0s;
+    transition: width 0.45s ease 0s;
+  }
+}
+
+@media (max-width: 47.99875em) and (any-hover: hover) {
+  .documents-certifications__button:hover::after {
+    width: calc(100% - 5rem);
+  }
 }
 
 @media (max-width: 22.5em) {
@@ -3214,6 +3320,10 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     margin-right: -0.1875rem;
   }
 
+  ._certifications-button:hover::after {
+    width: calc(100% - 5rem);
+  }
+
   .menu__link:hover {
     color: #00528d;
   }
@@ -3224,10 +3334,6 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 
   .gallery-home__thumbs-slide:hover {
     cursor: pointer;
-  }
-
-  .certifications-home__button:hover::after {
-    width: calc(100% - 5rem);
   }
 
   .form-contact-home__button:hover {

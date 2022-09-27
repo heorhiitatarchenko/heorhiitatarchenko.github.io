@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
 	<title>Home page</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220927194428">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220927230054">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,8 +41,8 @@
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link">Main Activities</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Certifications</a></li>
+							<li class="menu__item"><a href="index.html" class="menu__link">Main Activities</a></li>
+							<li class="menu__item"><a href="certifications.html" class="menu__link">Certifications</a></li>
 							<li class="menu__item"><a href="#" class="menu__link">References</a></li>
 							<li class="menu__item"><a href="#" class="menu__link">Machines</a></li>
 							<li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
@@ -64,12 +64,12 @@
 		<!-- Homepage -->
 		<main class="home">
 			<!-- Homepage main section -->
-			<section class="home__main main-home" data-bg='img/home/main/background.png'>
-				<div class="main-home__container">
+			<section class="home__main main-home main-section" data-bg='img/home/main/background.png'>
+				<div class="main-section__container">
 					<!-- Page main title -->
-					<h1 class="main-home__title _page-title">Lorem ipsum</h1>
+					<h1 class="main-section__title _page-title">Lorem ipsum</h1>
 					<!-- Page main text -->
-					<div class="main-home__text-block _main-text-block">
+					<div class="main-section__text-block _main-text-block">
 						<p class="_main-text">
 							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
 							laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
@@ -79,9 +79,9 @@
 					</div>
 
 					<!-- Page main buttons -->
-					<div class="main-home__buttons _buttons-main">
-						<a href="#" class="main-home__button _main-red-btn">Main Activities</a>
-						<a href="#" class="main-home__button _main-red-btn">Certifications</a>
+					<div class="main-section__buttons _buttons-main">
+						<a href="#" class="main-section__button _main-red-btn">Main Activities</a>
+						<a href="#" class="main-section__button _main-red-btn">Certifications</a>
 					</div>
 				</div>
 			</section>
@@ -302,36 +302,24 @@
 				<div class="certifications-home__body">
 					<div class="certifications-home__container">
 						<div class="certifications-home__buttons-block">
-							<div class="certifications-home__button">
-								<a href="#">
-									<p>ISO 9001 (hun)</p>
-								</a>
-							</div>
-							<div class="certifications-home__button">
-								<a href="#">
-									<p>ISO 9001 (hun)</p>
-								</a>
-							</div>
-							<div class="certifications-home__button">
-								<a href="#">
-									<p>ISO 9001 (hun)</p>
-								</a>
-							</div>
-							<div class="certifications-home__button">
-								<a href="#">
-									<p>ISO 9001 (hun)</p>
-								</a>
-							</div>
-							<div class="certifications-home__button">
-								<a href="#">
-									<p>ISO 9001 (hun)</p>
-								</a>
-							</div>
-							<div class="certifications-home__button">
-								<a href="#">
-									<p>ISO 9001 (hun)</p>
-								</a>
-							</div>
+							<a href="#" class="certifications-home__button _certifications-button">
+								<p>ISO 9001 (hun)</p>
+							</a>
+							<a href="#" class="certifications-home__button _certifications-button">
+								<p>ISO 9001 (deu)</p>
+							</a>
+							<a href="#" class="certifications-home__button _certifications-button">
+								<p>ISO 9001 (eng)</p>
+							</a>
+							<a href="#" class="certifications-home__button _certifications-button">
+								<p>ISO 9001 (hun)</p>
+							</a>
+							<a href="#" class="certifications-home__button _certifications-button">
+								<p>ISO 9001 (deu)</p>
+							</a>
+							<a href="#" class="certifications-home__button _certifications-button">
+								<p>ISO 9001 (eng)</p>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -462,10 +450,13 @@
 		</main>
 		<footer class="footer" style="background: url('img/footer/Footer.png') center / cover no-repeat">
 			<div class="footer__container">
-				<a href="index.html" class="footer__logo">
-					<img src="img/logo-with-text.svg" alt="Vilati Logo" class="footer__logo-desktop">
-					<img src="img/logo.svg" alt="Vilati Logo" class="footer__logo-mobile">
-				</a>
+				<div class="footer__logo">
+					<a href="index.html">
+						<img src="img/logo-with-text.svg" alt="Vilati Logo" class="footer__logo-desktop">
+						<img src="img/logo.svg" alt="Vilati Logo" class="footer__logo-mobile">
+					</a>
+				</div>
+
 				<div class="footer__links">
 					<a href="#">Terms & Conditions</a>
 					<a href="#">Privacy Policy</a>
@@ -477,7 +468,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20220927194428"></script>
+	<script src="js/app.min.js?_v=20220927230054"></script>
 </body>
 
 </html>
