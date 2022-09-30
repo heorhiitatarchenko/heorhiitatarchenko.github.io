@@ -1009,6 +1009,7 @@ textarea.input {
   position: absolute;
   left: 50%;
   bottom: 0;
+  z-index: 5;
   -webkit-transform: translate(-50%, 65.2777777778%);
       -ms-transform: translate(-50%, 65.2777777778%);
           transform: translate(-50%, 65.2777777778%);
